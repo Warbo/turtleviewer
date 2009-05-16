@@ -1,0 +1,30 @@
+THIS CODE IS ALL IN THE PUBLIC DOMAIN
+
+This is a converter to possibly the most inefficient image format ever
+devised. You'll need pygame to use it, as well as Python with turtle
+(eg. CPython 2.6)
+
+Given an image filename and an output filename, like this:
+
+python TurtleConvert.py MyImage.png MyImage.py
+
+The file MyImage.py will be created containing Python code to draw the
+given image, in black and white, using the LOGO-style turtle module.
+
+The output given is the number of pixels left to process. When it
+reaches zero it's done, and you can run the output file to draw the
+image.
+
+This is just an experiment for fun. I hope you enjoy it :)
+
+ -Chris Warburton
+
+TODO
+
+Replace pygame with an imagemagick-style library?
+Use dithering to convert to black and white, rather than thresholds
+Optimise the output code:
+	* goto considered harmful (plus it makes things too easy ;) )
+	* check for straight lines, rather than simply neighbours
+	* when stuck, go to nearest black spot, rather than popping the list
+	* add full colour?
