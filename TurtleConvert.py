@@ -32,7 +32,7 @@ def get_moves(pixel_array):
 	moves.append('turtle.goto('+str(current_pos[0])+','+str(current_pos[1])+')')
 	moves.append('turtle.down()')
 	while len(array_copy) > 0:
-		print str(len(array_copy))
+		#print str(len(array_copy))
 		possibilities = get_neighbours(current_pos)
 		found_neighbour = False
 		for poss in possibilities:
@@ -51,13 +51,14 @@ def get_moves(pixel_array):
 	return moves
 
 surface = pygame.image.load(sys.argv[1])
+
 surface_array = flip_surface(surface)
 
 remaining_coords = []
 
 for r, row in enumerate(surface_array):
 	for c, element in enumerate(row):
-		if element[0] + element[1] + element[2] < 3*128:
+		if int(element[0]) + int(element[1]) + int(element[2]) < 3*128:
 			remaining_coords.append((r,c))
 			element[0] = element[1] = element[2] = 0
 		else:
