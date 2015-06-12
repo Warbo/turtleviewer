@@ -1,14 +1,14 @@
-THIS CODE IS ALL IN THE PUBLIC DOMAIN
+**THIS CODE IS ALL IN THE PUBLIC DOMAIN**
 
 This is a converter to possibly the most inefficient image format ever
-devised. You'll need pygame to use it, as well as Python with turtle
+devised. You'll need pygame to use it, as well as Python with `turtle`
 (eg. CPython 2.6)
 
 Given an image filename and an output filename, like this:
 
-python TurtleConvert.py MyImage.png MyImage.py
+    python TurtleConvert.py MyImage.png MyImage.py
 
-The file MyImage.py will be created containing Python code to draw the
+The file `MyImage.py` will be created containing Python code to draw the
 given image, in black and white, using the LOGO-style turtle module.
 
 The output given is the number of pixels left to process. When it
@@ -17,7 +17,7 @@ image.
 
 This is just an experiment for fun. I hope you enjoy it :)
 
- -Chris Warburton
+ - Chris Warburton
 
 TODO
 
