@@ -1,3 +1,8 @@
+try:
+	import psyco
+	psyco.full()
+except:
+	pass
 import time
 import turtle
 import pygame
