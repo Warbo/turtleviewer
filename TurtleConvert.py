@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 try:
 	import psyco
 	psyco.full()
